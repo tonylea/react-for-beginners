@@ -3,6 +3,9 @@
   "version": "0.0.3",
   "private": true,
   "devDependencies": {
+    "@types/react": "^16.4.16",
+    "@types/react-dom": "^16.0.9",
+    "@types/react-router-dom": "^4.3.1",
     "concurrently": "3.5.1",
     "react-scripts": "^1.1.4"
   },
