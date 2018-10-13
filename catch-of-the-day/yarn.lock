@@ -142,6 +142,11 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.6.tgz#9c03d3fed70a8d517c191b7734da2879b50ca26c"
   integrity sha512-ZBFR7TROLVzCkswA3Fmqq+IIJt62/T7aY/Dmz+QkU7CaW2QFqAitCE8Ups7IzmGhcN1YWMBT4Qcoc07jU9hOJQ==
 
+"@types/re-base@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@types/re-base/-/re-base-3.2.0.tgz#b2d06efcd94fafbd72328418c6602974760d7d3a"
+  integrity sha512-uH4+X3svBjHbTbJi8ZT3N4dltuTng2B577AAmrkMrVcFdkMEjPYf4VTUMjWUi4OXOFpiSLcuLZrFaDhAxivndw==
+
 "@types/react-dom@^16.0.9":
   version "16.0.9"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.9.tgz#73ceb7abe6703822eab6600e65c5c52efd07fb91"
@@ -2835,9 +2840,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.30:
-  version "1.3.78"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.78.tgz#ecb72b5b166ba6598efb384461d63cad74678ebf"
-  integrity sha512-p4D/5iX08c3LNep5bWn/X3dFmec1K9le6O43lgRsO/vYKBTH2smWDMDfkGlPtERFcLVkI8xdKW5EokBZODh1xg==
+  version "1.3.79"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.79.tgz#774718f06284a4bf8f578ac67e74508fe659f13a"
+  integrity sha512-LQdY3j4PxuUl6xfxiFruTSlCniTrTrzAd8/HfsLEMi0PUpaQ0Iy+Pr4N4VllDYjs0Hyu2lkTbvzqlG+PX9NsNw==
 
 elliptic@^6.0.0:
   version "6.4.1"
@@ -3572,7 +3577,7 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-firebase@^4.10.1, firebase@^4.5.0:
+firebase@^4.10.0, firebase@^4.5.0:
   version "4.13.1"
   resolved "https://registry.yarnpkg.com/firebase/-/firebase-4.13.1.tgz#87ab64bbb7f707244fb878f2a28235b0e3aed3ec"
   integrity sha512-vi+DbUPRrsUaLxuMLgCuyISTBNQ/TqrEwWzUpMqyABPwE6YhGplNnCDPs+/kRDXxdqWUdwrUEXo1ansBSimoNw==
