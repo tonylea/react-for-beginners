@@ -25,7 +25,10 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    localStorage.setItem(this.props.match.params.storeId, JSON.stringify(this.state.order));
+    localStorage.setItem(
+      this.props.match.params.storeId,
+      JSON.stringify(this.state.order)
+    );
   }
 
   componentWillUnmount() {
@@ -39,6 +42,12 @@ class App extends Component {
     // add new data to copy with unique key
     fishes[`fish${Date.now()}`] = fish;
     // update state
+    this.setState({ fishes });
+  };
+
+  updateFish = (key, updatedFish) => {
+    const fishes = { ...this.state.fishes };
+    fishes[key] = updatedFish;
     this.setState({ fishes });
   };
 
@@ -60,12 +69,22 @@ class App extends Component {
           <Header tagline="Fresh Seafood Market" />
           <ul className="fishes">
             {Object.keys(fishes).map(key => (
-              <Fish key={key} index={key} details={fishes[key]} addToOrder={this.addToOrder} />
+              <Fish
+                key={key}
+                index={key}
+                details={fishes[key]}
+                addToOrder={this.addToOrder}
+              />
             ))}
           </ul>
         </div>
         <Order fishes={fishes} order={order} />
-        <Inventory addFish={this.addFish} loadSampleFishes={this.loadSampleFishes} />
+        <Inventory
+          addFish={this.addFish}
+          updateFish={this.updateFish}
+          loadSampleFishes={this.loadSampleFishes}
+          fishes={this.state.fishes}
+        />
       </div>
     );
   }
